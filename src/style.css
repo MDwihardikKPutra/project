@@ -1,0 +1,1111 @@
+:root {
+  --main-color: rgba(244, 78, 25, 1);
+  --titlecolor: rgba(21, 24, 27, 1);
+}
+
+/* ===== PENGATURAN DASAR & PERBAIKAN LAYOUT ===== */
+
+.landing-page-PGE {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.landing-page-PGE .horizontal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px 60px;
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+  position: relative;
+}
+
+.landing-page-PGE .text-wrapper,
+.landing-page-PGE .div,
+.landing-page-PGE .text-wrapper-2,
+.landing-page-PGE .text-wrapper-3,
+.landing-page-PGE .text-wrapper-4,
+.landing-page-PGE .text-wrapper-5 {
+  width: auto;
+  position: relative;
+  font-family: "Exo-Medium", Helvetica;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+  color: #15181b; /* Warna default */
+}
+
+.landing-page-PGE .text-wrapper {
+  color: #f44e19; /* Warna aktif untuk Home */
+}
+
+.landing-page-PGE .image {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* ===== HERO SECTION (HEADER ATAS) ===== */
+
+.landing-page-PGE .button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+  padding: 80px 60px;
+  position: relative;
+  background-image: url("./img/logopge.png");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .button-container-2 {
+  display: flex;
+  width: 100%;
+  max-width: 1290px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.landing-page-PGE .text-input-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 884px;
+  gap: 37.84px;
+  position: relative;
+}
+
+.landing-page-PGE .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Exo-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 32.9px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-decoration: underline;
+}
+
+.landing-page-PGE .power-plant-expert {
+  position: relative;
+  flex: 1;
+  font-family: "Exo-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 105.3px;
+  letter-spacing: 0;
+  line-height: 98.7px;
+}
+
+.landing-page-PGE .p {
+  position: relative;
+  align-self: stretch;
+  opacity: 0.9;
+  font-family: "Helvetica Light-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 26.3px;
+  letter-spacing: 0;
+  line-height: 24.7px;
+}
+
+.landing-page-PGE .button {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 8.23px;
+  padding: 12px 20px;
+  position: relative;
+  background-color: #1e365c;
+  border-radius: 11.52px;
+  cursor: pointer;
+}
+
+.landing-page-PGE .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 13.2px;
+  letter-spacing: 0;
+  line-height: 21.4px;
+  white-space: nowrap;
+}
+
+.landing-page-PGE .button-container-3 {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 74.03px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.landing-page-PGE .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34.55px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.landing-page-PGE .img {
+  width: 189.36px;
+  height: 59.18px;
+  position: relative;
+  object-fit: cover;
+}
+
+.landing-page-PGE .tooltip {
+  display: inline-flex;
+  align-items: center;
+  gap: 12.34px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.landing-page-PGE .image-2 {
+  width: 126.7px;
+  height: 166.14px;
+  position: relative;
+  object-fit: cover;
+}
+
+.landing-page-PGE .image-3 {
+  width: 127.01px;
+  height: 165.73px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* ===== BAGIAN COMPANY PROFILE & SELANJUTNYA ===== */
+
+.landing-page-PGE .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+  padding: 120px 60px 80px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page-PGE .container {
+  position: relative;
+  width: 619.85px;
+  height: 580px;
+  max-width: 100%;
+}
+
+.landing-page-PGE .overlap {
+  position: relative;
+  width: 620px;
+  height: 580px;
+}
+
+.landing-page-PGE .calendar {
+  position: absolute;
+  width: 205px;
+  height: 226px;
+  top: 350px;
+  left: 0;
+}
+
+.landing-page-PGE .container-2 {
+  position: absolute;
+  width: 410px;
+  height: 530px;
+  top: 50px;
+  left: 70px;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  background-image: url(./img/HeroSection.png);
+  background-size: cover;
+}
+
+.landing-page-PGE .rating-container {
+  position: absolute;
+  width: 330px;
+  height: 370px;
+  top: 0;
+  left: 290px;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  background-image: url(./img/company2.png);
+  background-size: cover;
+}
+
+.landing-page-PGE .overlap-group-wrapper {
+  position: absolute;
+  width: 274px;
+  height: 120px;
+  top: 400px;
+  left: 290px;
+}
+
+.landing-page-PGE .overlap-group {
+  width: 270px;
+  height: 120px;
+  background-color: #1e365c;
+  position: relative;
+  border-radius: 3px;
+}
+
+.landing-page-PGE .text-wrapper-8 {
+  position: absolute;
+  top: 62px;
+  left: 22px;
+  font-family: "Exo-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.landing-page-PGE .text-wrapper-9 {
+  position: absolute;
+  top: 16px;
+  left: 22px;
+  font-family: "Exo-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 46px;
+  white-space: nowrap;
+}
+
+.landing-page-PGE .button-container-4 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  max-width: 100%;
+  gap: 26px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.landing-page-PGE .button-container-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: stretch;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+}
+
+.landing-page-PGE .company-profile {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Helvetica-Narrow-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--titlecolor);
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 58px;
+}
+
+.landing-page-PGE .text-wrapper-10 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Helvetica Light-Regular", Helvetica;
+  font-weight: 400;
+  color: #6a6a6a;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.landing-page-PGE .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: auto;
+  padding: 8px 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #1e365c;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.landing-page-PGE .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.landing-page-PGE .header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 108px;
+  padding: 80px 60px;
+  position: relative;
+  background-color: transparent;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+/* (Sisa dari kode CSS yang sudah rapi dan berfungsi ada di sini) */
+/* ... Saya akan melanjutkan kode dari sini agar tidak terlalu panjang ... */
+
+.landing-page-PGE .frame {
+  flex-direction: column;
+  width: 442px;
+  max-width: 100%;
+  align-items: flex-start;
+  gap: 50px;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-PGE .frame-2 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-PGE .text-wrapper-12 {
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #15181b;
+  font-size: 48px;
+  line-height: 60px;
+  position: relative;
+  align-self: stretch;
+  letter-spacing: 0;
+}
+
+.landing-page-PGE .text-wrapper-13 {
+  position: relative;
+  width: 388px;
+  max-width: 100%;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 29.2px;
+}
+
+.landing-page-PGE .frame-3 {
+  width: 362px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-PGE .frame-4 {
+  flex-direction: column;
+  width: 132px;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-PGE .text-wrapper-14 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #f44e19;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.landing-page-PGE .text-wrapper-15 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.landing-page-PGE .frame-5 {
+  flex-direction: column;
+  width: 116px;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-PGE .frame-6 {
+  width: 179px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 23px;
+  background-color: #1e365c;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-PGE .text-wrapper-16 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.landing-page-PGE .rectangle {
+  position: relative;
+  width: 662px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.landing-page-PGE .card {
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px 20px 40px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .text-input-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.landing-page-PGE .text-wrapper-17 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Helvetica-Narrow-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--titlecolor);
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 10px;
+  white-space: nowrap;
+}
+
+.landing-page-PGE .switch-container {
+  display: flex;
+  justify-content: center; /* Memastikan isinya (gambar) di tengah */
+  width: 100%; /* Biarkan lebarnya penuh agar bisa diatur oleh padding parent */
+  padding: 40px 0; /* Memberi jarak atas dan bawah, tanpa padding samping */
+  box-sizing: border-box;
+}
+
+/* Kita juga perlu memastikan gambarnya tidak terlalu besar */
+.landing-page-PGE .switch {
+  width: 100%;
+  max-width: 1131px;
+  height: auto;
+  max-height: 600px; /* BATASI TINGGI MAKSIMAL GAMBAR HINGGA 600 PIXEL */
+  object-fit: cover; /* 'cover' mungkin lebih baik untuk mengisi area */
+}
+
+.landing-page-PGE .frame-7 {
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 60px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page-PGE .frame-wrapper,
+.landing-page-PGE .frame-10,
+.landing-page-PGE .frame-12 {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  height: auto;
+  gap: 10px;
+  padding: 44px 32px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 1px 3px #0000001a, 0px 1px 2px #0000001a;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+}
+
+.landing-page-PGE .frame-8,
+.landing-page-PGE .frame-11,
+.landing-page-PGE .frame-13 {
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  gap: 28px;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-PGE .frame-9 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.landing-page-PGE .text-wrapper-18 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #15181b;
+  font-size: 20px;
+  line-height: 28px;
+  position: relative;
+  align-self: stretch;
+  letter-spacing: 0;
+}
+
+.landing-page-PGE .text-wrapper-19 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.landing-page-PGE .horizontal-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px 0px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.landing-page-PGE .text-wrapper-20 {
+  position: relative;
+  width: fit-content;
+  font-family: "Helvetica-Narrow-Bold", Helvetica;
+  font-weight: 700;
+  color: #15181b;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 58px;
+  white-space: nowrap;
+}
+
+.landing-page-PGE .table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  padding: 80px 20px 60px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page-PGE .image-4 {
+  width: 364px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  object-fit: cover;
+}
+
+.landing-page-PGE .card-2 {
+  gap: 100px;
+  padding: 120px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page-PGE .vertical-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  max-width: 100%;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+}
+
+.landing-page-PGE .supervision-services {
+  position: relative;
+  align-self: stretch;
+  font-family: "Helvetica-Narrow-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--titlecolor);
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: 100px;
+}
+
+.landing-page-PGE .we-provide-you-with-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.landing-page-PGE .we-provide-you-with {
+  position: relative;
+  flex: 1;
+  font-family: "Helvetica Light-Regular", Helvetica;
+  font-weight: 400;
+  color: #15181b;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+
+.landing-page-PGE .span {
+  line-height: 28px;
+}
+
+.landing-page-PGE .text-wrapper-21 {
+  font-family: "Roboto-Regular", Helvetica;
+  line-height: 28px;
+}
+
+.landing-page-PGE .text-wrapper-22 {
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.landing-page-PGE .checkbox-2 {
+  position: relative;
+  width: 314px;
+  height: auto;
+  max-height: 872px;
+  object-fit: cover;
+}
+
+.landing-page-PGE .input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 0px 0px 60px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .segmented-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 60px 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #1e365c;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .div-wrapper-2 {
+  position: relative;
+  width: 100%;
+}
+
+.landing-page-PGE .text-wrapper-23 {
+  width: 100%;
+  font-family: "Exo-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.landing-page-PGE .number-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page-PGE .card-3 {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  height: 470px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Atur background untuk masing-masing kartu proyek */
+.landing-page-PGE .card-3:nth-child(1) .text-input-container-2 {
+  background-image: url(./img/text-input-container-3.png);
+}
+.landing-page-PGE .card-3:nth-child(2) .text-input-container-3 {
+  background-image: url(./img/text-input-container-4.png);
+}
+/* ...dan seterusnya untuk kartu lain */
+
+.landing-page-PGE .div-wrapper-3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 90px;
+  background-color: #5a6267e6;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .service-consultants {
+  width: 100%;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.landing-page-PGE .text-wrapper-24 {
+  width: 100%;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .detail-engineering {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.landing-page-PGE .horizontal-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 60px 20px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.landing-page-PGE .text-wrapper-25 {
+  font-family: "Exo-Bold", Helvetica;
+  font-weight: 700;
+  color: #15181b;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 58px;
+}
+
+.landing-page-PGE .container-3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  padding: 60px 20px;
+  position: relative;
+  width: 100%;
+  background-color: #1e365c;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.landing-page-PGE .paragraph-container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  align-items: flex-start;
+  gap: 34px;
+  position: relative;
+}
+
+.landing-page-PGE .text-wrapper-26,
+.landing-page-PGE .text-wrapper-27,
+.landing-page-PGE .text-wrapper-28 {
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+/* ===== KODE ANIMASI GABUNGAN (FINAL) ===== */
+
+/* 1. Definisi Keyframe Animasi */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================================================== */
+/* A. ANIMASI SAAT HALAMAN DIMUAT (KHUSUS UNTUK HERO SECTION) */
+/* =============================================================== */
+
+/* Membuat elemen hero section tidak terlihat di awal */
+.landing-page-PGE .text-wrapper-6,
+.landing-page-PGE .power-plant-expert,
+.landing-page-PGE .p,
+.landing-page-PGE .button,
+.landing-page-PGE .button-container-3 {
+  opacity: 0;
+}
+
+/* Menerapkan animasi dengan jeda waktu (delay) agar muncul satu per satu */
+.landing-page-PGE .text-wrapper-6 {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+.landing-page-PGE .power-plant-expert {
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+.landing-page-PGE .p {
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+.landing-page-PGE .button {
+  animation: fadeInUp 0.8s ease-out 0.8s forwards;
+}
+.landing-page-PGE .button-container-3 {
+  animation: fadeInUp 0.8s ease-out 1s forwards;
+}
+
+/* =============================================================== */
+/* B. ANIMASI SAAT SCROLL (UNTUK SEMUA BAGIAN DI BAWAH HERO)   */
+/* =============================================================== */
+
+/* Kondisi Awal Elemen (Sebelum Terlihat) */
+.animate-on-view {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Kondisi Akhir Elemen (Setelah Terlihat di Layar) */
+.animate-on-view.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =============================================================== */
+/* C. EFEK INTERAKTIF TAMBAHAN (HOVER)                           */
+/* =============================================================== */
+
+/* Transisi Halus untuk Item Menu Navigasi */
+.landing-page-PGE .navbar .div,
+.landing-page-PGE .navbar .text-wrapper,
+.landing-page-PGE .navbar .text-wrapper-2,
+.landing-page-PGE .navbar .text-wrapper-3,
+.landing-page-PGE .navbar .text-wrapper-4,
+.landing-page-PGE .navbar .text-wrapper-5 {
+  transition: color 0.3s ease;
+}
+
+.landing-page-PGE .navbar .div:hover,
+.landing-page-PGE .navbar .text-wrapper-2:hover,
+.landing-page-PGE .navbar .text-wrapper-3:hover,
+.landing-page-PGE .navbar .text-wrapper-4:hover,
+.landing-page-PGE .navbar .text-wrapper-5:hover {
+  color: #f44e19;
+}
+
+/* Efek Modern pada Kartu Layanan */
+.landing-page-PGE .frame-wrapper,
+.landing-page-PGE .frame-10,
+.landing-page-PGE .frame-12 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing-page-PGE .frame-wrapper:hover,
+.landing-page-PGE .frame-10:hover,
+.landing-page-PGE .frame-12:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(21, 24, 27, 0.1);
+  cursor: pointer;
+}
+
+/* Efek untuk tombol "Take Our Service" */
+.landing-page-PGE .button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek untuk gambar-gambar di kanan hero section */
+.landing-page-PGE .button-container-3 .img:hover,
+.landing-page-PGE .button-container-3 .image-2:hover,
+.landing-page-PGE .button-container-3 .image-3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+/* ===== CSS UNTUK SLIDESHOW GAMBAR OTOMATIS ===== */
+
+/* 1. Wadah untuk slideshow */
+.slideshow-container {
+  position: relative;
+  width: 662px; /* Menyesuaikan ukuran dengan gambar sebelumnya */
+  height: 575px;
+  max-width: 100%;
+  overflow: hidden; /* Menyembunyikan gambar yang tidak aktif */
+}
+
+/* 2. Gaya untuk setiap gambar di dalam slideshow */
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Agar gambar memenuhi wadah tanpa distorsi */
+  opacity: 0; /* Semua gambar awalnya tidak terlihat */
+  animation-name: fade-in-out;
+  animation-duration: 15s; /* Total durasi untuk 3 gambar (5 detik per gambar) */
+  animation-iteration-count: infinite; /* Agar animasi terus berulang */
+}
+
+/* 3. Pengaturan waktu untuk setiap gambar */
+.slideshow-image:nth-child(1) {
+  animation-delay: 0s; /* Gambar pertama mulai langsung */
+}
+.slideshow-image:nth-child(2) {
+  animation-delay: 5s; /* Gambar kedua muncul setelah 5 detik */
+}
+.slideshow-image:nth-child(3) {
+  animation-delay: 10s; /* Gambar ketiga muncul setelah 10 detik */
+}
+
+/* 4. Definisi animasi fade-in dan fade-out */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  } /* Mulai (tidak terlihat) */
+  10% {
+    opacity: 1;
+  } /* Muncul (fade in selesai) */
+  33% {
+    opacity: 1;
+  } /* Tetap terlihat */
+  43% {
+    opacity: 0;
+  } /* Mulai menghilang (fade out) */
+  100% {
+    opacity: 0;
+  } /* Tetap tidak terlihat hingga giliran berikutnya */
+}
