@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 import About from "./pages/About"; // Halaman About
 import Projects from "./pages/Projects"; // Halaman Projects
 import Experience from "./pages/Experience"; // Halaman Experience
-import CSRPageContent from "./pages/CSR";
+import CSRPageContent from "./pages/Csr";
 import ServiceDetailPageContent from "./pages/ServiceDetail";
 
 /**
