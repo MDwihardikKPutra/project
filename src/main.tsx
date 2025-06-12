@@ -10,7 +10,7 @@ import Home from "./pages/Home.tsx"; // Assuming you have a Home component
 import About from "./pages/About.tsx";
 import Projects from "./pages/Projects.tsx";
 import Services from "./pages/Services.tsx";
-import Csr from "./pages/Csr.tsx";
+import csr from "./pages/csr.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx"; // <--- Import NotFound component
 
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "csr",
-        element: <Csr />,
+        element: <csr />,
       },
       {
         path: "contact",

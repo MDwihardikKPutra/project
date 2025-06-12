@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 import About from "./pages/About"; // Halaman About
 import Projects from "./pages/Projects"; // Halaman Projects
 import Experience from "./pages/Experience"; // Halaman Experience
-import CSRPageContent from "./pages/Csr";
+import csrPageContent from "./pages/csr";
 import ServiceDetailPageContent from "./pages/ServiceDetail";
 
 /**
@@ -35,7 +35,7 @@ function AppRoutes() {
         <Route path="about" element={<About />} />
         <Route path="experience" element={<Experience />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="csr" element={<CSRPageContent />} />
+        <Route path="csr" element={<csrPageContent />} />
         <Route
           path="service-detail/:serviceName"
           element={<ServiceDetailPageContent />}

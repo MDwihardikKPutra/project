@@ -104,10 +104,10 @@ function App() {
                   {" "}
                   Services{" "}
                 </Link>
-                {/* Link CSR ke halaman CSR.tsx yang terpisah */}
+                {/* Link csr ke halaman csr.tsx yang terpisah */}
                 <Link to="/csr" className={getNavLinkClass("/csr")}>
                   {" "}
-                  CSR{" "}
+                  csr{" "}
                 </Link>
                 {/* Link Contact diubah ke halaman Contact.tsx terpisah */}
                 <Link
@@ -170,13 +170,13 @@ function App() {
                 {" "}
                 Services{" "}
               </Link>
-              {/* Link CSR ke halaman CSR.tsx yang terpisah */}
+              {/* Link csr ke halaman csr.tsx yang terpisah */}
               <Link
                 to="/csr"
                 className="block px-3 py-3 text-dark-gray hover:text-primary-red"
               >
                 {" "}
-                CSR{" "}
+                csr{" "}
               </Link>
               {/* Link Contact diubah ke halaman Contact.tsx terpisah */}
               <Link
