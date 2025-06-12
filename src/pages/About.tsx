@@ -48,7 +48,7 @@ function About() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary-red to-secondary-blue rounded-3xl blur opacity-20"></div>
                 <img
-                  src="/img/Company2.png"
+                  src="/img/company2.png"
                   alt="Company Profile"
                   className="relative rounded-3xl shadow-2xl w-full h-96 object-contain"
                 />

@@ -27,7 +27,7 @@ function Home() {
   const combinedSectionSlides = [
     "/img/HeroSection.png", // Ensure this path is correct
     "/img/Back2.png", // Ensure this path is correct
-    "/img/Company2.png", // Ensure this path is correct
+    "/img/company2.png", // Ensure this path is correct
   ];
 
   // Data for services in #section-services
@@ -215,7 +215,7 @@ function Home() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary-red to-secondary-blue rounded-3xl blur opacity-20"></div>
                 <img
-                  src="/img/Company2.png" // The Company Profile image
+                  src="/img/company2.png" // The Company Profile image
                   alt="Company Profile Visual"
                   className="relative rounded-3xl shadow-2xl w-full h-96 object-cover"
                 />
@@ -387,7 +387,7 @@ function Home() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-secondary-blue to-primary-red rounded-3xl blur opacity-30"></div>
                 <div className="relative bg-app-white/10 backdrop-blur-lg rounded-3xl p-2 border border-app-white/20">
                   <img
-                    src="/img/Company2.png" // Using one of your existing slides for consistency, you can change this
+                    src="/img/company2.png" // Using one of your existing slides for consistency, you can change this
                     alt="Our Extensive Experience Visual"
                     className="rounded-2xl w-full h-80 object-cover"
                   />
