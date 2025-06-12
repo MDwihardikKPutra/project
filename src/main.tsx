@@ -1,17 +1,64 @@
+// src/main.tsx (or your main routing file)
 import React from "react";
 import ReactDOM from "react-dom/client";
-// PENTING: Import AppRoutes, bukan App secara langsung
-import AppRoutes from "./AppRoutes.tsx"; // PASTIKAN ANDA MENGIMPOR INI
-import "./index.css"; // Atau './style.css' tergantung yang Anda pakai
-import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App.tsx";
+import "./index.css"; // Your main CSS file
+
+// Import your page components
+import Home from "./pages/Home.tsx"; // Assuming you have a Home component
+import About from "./pages/About.tsx";
+import Projects from "./pages/Projects.tsx";
+import Services from "./pages/Services.tsx";
+import Csr from "./pages/Csr.tsx";
+import Contact from "./pages/Contact.tsx";
+import NotFound from "./pages/NotFound.tsx"; // <--- Import NotFound component
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true, // This makes Home the default child route for '/'
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "projects",
+        element: <Projects />,
+      },
+      {
+        path: "services",
+        element: <Services />,
+      },
+      {
+        path: "csr",
+        element: <Csr />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      // Keep this route if you still plan to use it for Experience,
+      // otherwise, you might remove it if the navbar link is gone.
+      // {
+      //   path: 'experience',
+      //   element: <Experience />,
+      // },
+      {
+        path: "*", // This is the catch-all route for any undefined paths
+        element: <NotFound />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      {/* Sekarang, panggil AppRoutes di sini. 
-          AppRoutes yang akan mengelola semua definisi rute, 
-          termasuk memuat App sebagai layout. */}
-      <AppRoutes />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

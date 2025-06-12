@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  Menu,
-  X,
-  ChevronDown,
   ArrowRight,
   Building2,
   Zap,
@@ -22,6 +19,9 @@ import {
   Globe,
   Calendar,
   TrendingUp,
+  Menu,
+  X,
+  ChevronDown,
 } from "lucide-react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
@@ -44,10 +44,16 @@ function App() {
 
   // Fungsi untuk menentukan apakah link navigasi aktif
   const getNavLinkClass = (path: string) => {
-    // Disederhanakan karena hash link tidak akan "aktif" secara otomatis pada halaman lain
-    return location.pathname === path
-      ? "text-primary-red font-semibold relative group"
-      : "text-dark-gray hover:text-primary-red transition-colors font-medium";
+    // Untuk hash links, kita harus lebih spesifik jika ingin tetap menunjukkan aktif di Home
+    // Tapi karena sekarang Services dan Contact akan jadi halaman terpisah, mereka akan aktif sendiri
+    if (location.pathname === "/" && path === "/") {
+      return "text-primary-red font-semibold relative group";
+    }
+    // Untuk halaman terpisah, cek langsung pathname
+    if (location.pathname === path) {
+      return "text-primary-red font-semibold relative group";
+    }
+    return "text-dark-gray hover:text-primary-red transition-colors font-medium";
   };
 
   return (
@@ -86,29 +92,14 @@ function App() {
                 <Link to="/about" className={getNavLinkClass("/about")}>
                   About
                 </Link>
-                {/* Link Experience ke halaman Experience.tsx terpisah */}
-                <Link
-                  to="/experience"
-                  className={getNavLinkClass("/experience")}
-                >
-                  Experience
-                </Link>
                 {/* Link Projects ke halaman Projects.tsx terpisah */}
                 <Link to="/projects" className={getNavLinkClass("/projects")}>
                   Projects
                 </Link>
-                {/* Link Supervision ke section di Home (jika di Home) atau halaman Home lalu scroll */}
+                {/* Link Services diubah ke halaman Services.tsx terpisah */}
                 <Link
-                  to="/#supervision"
-                  className="text-dark-gray hover:text-primary-red transition-colors font-medium"
-                >
-                  {" "}
-                  Supervision{" "}
-                </Link>
-                {/* Link Services ke section di Home (jika di Home) atau halaman Home lalu scroll */}
-                <Link
-                  to="/#services"
-                  className="text-dark-gray hover:text-primary-red transition-colors font-medium"
+                  to="/services" // DIUBAH DARI "/#services"
+                  className={getNavLinkClass("/services")} // Menggunakan getNavLinkClass untuk styling aktif
                 >
                   {" "}
                   Services{" "}
@@ -118,10 +109,10 @@ function App() {
                   {" "}
                   CSR{" "}
                 </Link>
-                {/* Link Contact ke section di Home (jika di Home) atau halaman Home lalu scroll */}
+                {/* Link Contact diubah ke halaman Contact.tsx terpisah */}
                 <Link
-                  to="/#contact"
-                  className="text-dark-gray hover:text-primary-red transition-colors font-medium"
+                  to="/contact" // DIUBAH DARI "/#contact"
+                  className={getNavLinkClass("/contact")} // Menggunakan getNavLinkClass untuk styling aktif
                 >
                   {" "}
                   Contact{" "}
@@ -163,14 +154,6 @@ function App() {
                 {" "}
                 About{" "}
               </Link>
-              {/* Link Experience ke halaman Experience.tsx terpisah */}
-              <Link
-                to="/experience"
-                className="block px-3 py-3 text-dark-gray hover:text-primary-red"
-              >
-                {" "}
-                Experience{" "}
-              </Link>
               {/* Link Projects ke halaman Projects.tsx terpisah */}
               <Link
                 to="/projects"
@@ -179,17 +162,9 @@ function App() {
                 {" "}
                 Projects{" "}
               </Link>
-              {/* Link Supervision ke section di Home */}
+              {/* Link Services diubah ke halaman Services.tsx terpisah */}
               <Link
-                to="/#supervision"
-                className="block px-3 py-3 text-dark-gray hover:text-primary-red"
-              >
-                {" "}
-                Supervision{" "}
-              </Link>
-              {/* Link Services ke section di Home */}
-              <Link
-                to="/#services"
+                to="/services" // DIUBAH DARI "/#services"
                 className="block px-3 py-3 text-dark-gray hover:text-primary-red"
               >
                 {" "}
@@ -203,9 +178,9 @@ function App() {
                 {" "}
                 CSR{" "}
               </Link>
-              {/* Link Contact ke section di Home */}
+              {/* Link Contact diubah ke halaman Contact.tsx terpisah */}
               <Link
-                to="/#contact"
+                to="/contact" // DIUBAH DARI "/#contact"
                 className="block px-3 py-3 text-dark-gray hover:text-primary-red"
               >
                 {" "}
@@ -222,7 +197,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-dark-gray py-12 border-t border-dark-gray/80">
+      <footer className="**bg-app-white** py-12 border-t **border-gray-200** text-dark-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
@@ -234,13 +209,15 @@ function App() {
                 />
               </div>
               <div>
-                <span className="text-xl font-bold text-app-white">PGE</span>
-                <div className="text-xs text-app-white/80">
+                <span className="text-xl font-bold **text-dark-gray**">
+                  PGE
+                </span>
+                <div className="text-xs **text-dark-gray/80**">
                   Power Generation Expert
                 </div>
               </div>
             </div>
-            <div className="text-app-white/80 text-center md:text-right">
+            <div className="**text-dark-gray/80** text-center md:text-right">
               <p>
                 &copy; 2024 PGE - Power Generation Expert. All rights reserved.
               </p>

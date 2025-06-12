@@ -388,3 +388,52 @@ textarea:focus {
 .animate-bounce-3 {
   animation: bounce3 2.1s ease-in-out infinite;
 }
+
+/* src/index.css atau src/global.css */
+
+/* Untuk bentuk diagonal di Hero Section */
+.hero-diagonal-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%; /* Sesuaikan lebar ini sesuai kebutuhan, misalnya 50% atau 70% */
+  /* Properti clip-path untuk membuat bentuk diagonal */
+  /* Sesuaikan titik-titik polygon ini untuk mendapatkan bentuk yang presisi */
+  /* Poin pertama: top-left, Poin kedua: top-right, Poin ketiga: bottom-right, Poin keempat: bottom-left */
+  clip-path: polygon(
+    25% 0%,
+    /* Mulai potong dari 25% dari kiri atas */ 100% 0%,
+    /* Sampai ke kanan atas */ 100% 100%,
+    /* Sampai ke kanan bawah */ 0% 100%
+      /* Kembali ke kiri bawah (seharusnya tumpang tindih) */
+  );
+  /* Untuk memastikan bentuk diagonal terlihat di berbagai ukuran layar,
+     Anda mungkin perlu menyesuaikan nilai persentase ini dengan @media queries */
+}
+
+/* Jika Anda ingin efek diagonal terbalik di mobile, bisa tambahkan: */
+/* @media (max-width: 1024px) { */
+/* .hero-diagonal-right { */
+/* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); */ /* Kotak penuh untuk mobile */
+/* width: 100%; */
+/* } */
+/* } */
+
+/* Anda juga bisa menggunakan lebih banyak titik untuk bentuk yang lebih kompleks,
+   misalnya: clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+   Atau gunakan alat seperti https://bennettfeely.com/clippy/ untuk visual editor clip-path */
+/* In your index.css or globals.css */
+@keyframes bounceSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust bounce height */
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 3s infinite ease-in-out; /* Adjust duration and timing */
+}
