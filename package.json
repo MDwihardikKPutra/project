@@ -2,7 +2,7 @@
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://MDwihardikPutra.github.io/project/", // <-- Ini sudah benar
+  "homepage": "https://MDwihardikPutra.github.io/project/",
   "type": "module",
   "scripts": {
     "dev": "vite",
