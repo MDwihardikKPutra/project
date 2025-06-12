@@ -9,7 +9,7 @@ function Services() {
   const serviceCardsData = [
     {
       id: "project-management",
-      image: "/img/service (1).jpg",
+      image: "/img/service1.png",
       yearBadge: "PGE",
       categoryBadge: "Management",
       title: "Project Management Services",
@@ -18,7 +18,7 @@ function Services() {
     },
     {
       id: "construction-supervision",
-      image: "/img/service (2).jpg",
+      image: "/img/service2.png",
       yearBadge: "PGE",
       categoryBadge: "Supervision",
       title: "Construction Supervision",
@@ -27,7 +27,7 @@ function Services() {
     },
     {
       id: "engineering-design",
-      image: "/img/service (3).jpg",
+      image: "/img/service3.png",
       yearBadge: "PGE",
       categoryBadge: "Design",
       title: "Engineering Design & Services",
@@ -36,7 +36,7 @@ function Services() {
     },
     {
       id: "commissioning",
-      image: "/img/service (4).jpg",
+      image: "/img/service4.png",
       yearBadge: "PGE",
       categoryBadge: "Commissioning",
       title: "Commissioning",
@@ -45,7 +45,7 @@ function Services() {
     },
     {
       id: "as-built-drawing",
-      image: "/img/service (5).jpg",
+      image: "/img/service5.png",
       yearBadge: "PGE",
       categoryBadge: "Documentation",
       title: "As-Built Drawing",
@@ -54,7 +54,7 @@ function Services() {
     },
     {
       id: "reverse-engineering",
-      image: "/img/service (6).jpg",
+      image: "/img/service6.png",
       yearBadge: "PGE",
       categoryBadge: "Analysis",
       title: "Reverse Engineering",
@@ -63,7 +63,7 @@ function Services() {
     },
     {
       id: "inspection-assessment",
-      image: "/img/service (7).jpg",
+      image: "/img/service7.png",
       yearBadge: "PGE",
       categoryBadge: "Assessment",
       title: "Inspection & Assessment",
@@ -72,7 +72,7 @@ function Services() {
     },
     {
       id: "operation-maintenance",
-      image: "/img/service (8).jpg",
+      image: "/img/service8.png",
       yearBadge: "PGE",
       categoryBadge: "O&M",
       title: "Operation and Maintenance",
